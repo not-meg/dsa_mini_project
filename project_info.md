@@ -29,6 +29,6 @@
     - if they want to add any stops
     - for flight, do they want less time or less cost
     - for hotel, do they want most popular (based on ratings) or less cost
-  - Sort flight data according to user's preference and return
-  - Sort hotel data according to user's preference and return
-  - print an itinerary based on all the data collected
+- [ ] Sort flight data according to user's preference and return
+- [ ]  Sort hotel data according to user's preference and return
+- [ ]   print an itinerary based on all the data collected
