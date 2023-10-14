@@ -1,10 +1,11 @@
 # dsa_mini_project
 # travel itinerary project for dsa using graphs and trees in c
 
-> [!IMPORTANT] Please go through this **every time** before beginning to code. If there are any changes youre making to this file, **send a message** in the WhatsApp group, and then make the change. Please check the checkboxes **only once you have finished coding the section, run the code and made sure there are no errors**.
+> [!IMPORTANT]
+> Please go through this text **every time** before beginning to code. If there are any changes youre making to this file, **send a message** in the WhatsApp group, and then make the change. Please check the checkboxes **only once you have finished coding the section, ran the code and made sure there are no errors**.
 
 ## what we have (data):
-### 1. flight itinerary csv file, containing:
+### 1. [flight itinerary csv file](./flights.csv), containing:
 - from location
 - to location
 - price of flight
@@ -12,7 +13,7 @@
 - distance between [from] and [to]
 - agency (is this required?)
 
-### 2. hotel list csv file, containing:
+### 2. [hotel list csv file](./hotels.csv), containing:
 - travel code (is this required?)
 - userCode (is this required?)
 - hotel name (for now, each hotel name is a 6-letter randomly generated name)
