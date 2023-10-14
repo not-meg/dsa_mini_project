@@ -1,6 +1,8 @@
 # dsa_mini_project
 # travel itinerary project for dsa using graphs and trees in c
 
+> [!IMPORTANT] Please go through this **every time** before beginning to code. If there are any changes youre making to this file, **send a message** in the WhatsApp group, and then make the change. Please check the checkboxes **only once you have finished coding the section, run the code and made sure there are no errors**.
+
 ## what we have (data):
 ### 1. flight itinerary csv file, containing:
 - from location
