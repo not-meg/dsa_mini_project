@@ -1,76 +1,76 @@
 from,to,flightType,price,time,distance
 Natal (RN),Recife (PE),Economy,248.71,2h,263 km
 Recife (PE),Natal (RN),First Class,274.17,2h,263 km
-Natal (RN),Salvador (BH),Economy,90.41,2h 15m,1,319 km
-Salvador (BH),Natal (RN),Economy,191.87,2h 15m,1,319 km
-Rio de Janeiro (RJ),Campo Grande (MS),First Class,55.47,2h 30m,1,405 km
-Campo Grande (MS),Rio de Janeiro (RJ),Economy,305.85,2h 30m,1,405 km
-Recife (PE),Salvador (BH),Economy,274.17,2h 45m,1,612 km
-Salvador (BH),Recife (PE),First Class,316.22,2h 45m,1,612 km
+Natal (RN),Salvador (BH),Economy,90.41,2h 15m,1319 km
+Salvador (BH),Natal (RN),Economy,191.87,2h 15m,1319 km
+Rio de Janeiro (RJ),Campo Grande (MS),First Class,55.47,2h 30m,1405 km
+Campo Grande (MS),Rio de Janeiro (RJ),Economy,305.85,2h 30m,1405 km
+Recife (PE),Salvador (BH),Economy,274.17,2h 45m,1612 km
+Salvador (BH),Recife (PE),First Class,316.22,2h 45m,1612 km
 Natal (RN),Sao Paulo (SP),Economy,191.87,1h 30m,366 km
 Sao Paulo (SP),Natal (RN),First Class,191.87,1h 30m,366 km
 Rio de Janeiro (RJ),Sao Paulo (SP),First Class,193.55,1h 20m,362 km
 Sao Paulo (SP),Rio de Janeiro (RJ),Economy,193.55,1h 20m,362 km
-Campo Grande (MS),Salvador (BH),Economy,305.85,2h 45m,2,024 km
-Salvador (BH),Campo Grande (MS),First Class,316.22,2h 45m,2,024 km
-Florianopolis (SC),Recife (PE),Economy,67.93,3h 30m,2,594 km
-Recife (PE),Florianopolis (SC),First Class,67.93,3h 30m,2,594 km
-Rio de Janeiro (RJ),Salvador (BH),Economy,55.47,2h 45m,1,612 km
-Salvador (BH),Rio de Janeiro (RJ),First Class,316.22,2h 45m,1,612 km
-Natal (RN),Brasilia (DF),Economy,204.14,2h 30m,1,779 km
-Brasilia (DF),Natal (RN),First Class,204.14,2h 30m,1,779 km
-Recife (PE),Brasilia (DF),First Class,67.93,2h 45m,2,050 km
-Brasilia (DF),Recife (PE),Economy,67.93,2h 45m,2,050 km
-Rio de Janeiro (RJ),Florianopolis (SC),First Class,247.23,2h 15m,1,425 km
-Florianopolis (SC),Rio de Janeiro (RJ),Economy,247.23,2h 15m,1,425 km
-Campo Grande (MS),Florianopolis (SC),First Class,67.93,2h 45m,1,954 km
-Florianopolis (SC),Campo Grande (MS),Economy,67.93,2h 45m,1,954 km
-Salvador (BH),Sao Paulo (SP),Economy,127.22,2h 15m,1,597 km
-Sao Paulo (SP),Salvador (BH),First Class,127.22,2h 15m,1,597 km
-Rio de Janeiro (RJ),Aracaju (SE),First Class,85.29,2h 45m,1,693 km
-Aracaju (SE),Rio de Janeiro (RJ),Economy,85.29,2h 45m,1,693 km
-Recife (PE),Sao Paulo (SP),Economy,339.07,3h,2,216 km
-Sao Paulo (SP),Recife (PE),First Class,339.07,3h,2,216 km
-Natal (RN),Florianopolis (SC),Economy,220.84,3h 15m,2,390 km
-Florianopolis (SC),Natal (RN),First Class,220.84,3h 15m,2,390 km
-Rio de Janeiro (RJ),Salvador (BH),Economy,362.19,2h 45m,1,612 km
-Salvador (BH),Rio de Janeiro (RJ),First Class,362.19,2h 45m,1,612 km
-Recife (PE),Aracaju (SE),First Class,145.45,3h,2,085 km
-Aracaju (SE),Recife (PE),Economy,145.45,3h,2,085 km
-Campo Grande (MS),Sao Paulo (SP),Economy,386.7,2h 30m,1,352 km
-Sao Paulo (SP),Campo Grande (MS),First Class,386.7,2h 30m,1,352 km
-Recife (PE),Campo Grande (MS),First Class,305.85,3h,2,507 km
-Campo Grande (MS),Recife (PE),Economy,305.85,3h,2,507 km
-Salvador (BH),Florianopolis (SC),Economy,271.54,3h 30m,2,538 km
-Florianopolis (SC),Salvador (BH),First Class,271.54,3h 30m,2,538 km
-Rio de Janeiro (RJ),Brasilia (DF),First Class,361,2h 45m,1,183 km
-Brasilia (DF),Rio de Janeiro (RJ),Economy,361,2h 45m,1,183 km
-Natal (RN),Aracaju (SE),Economy,204.14,2h 45m,2,031 km
-Aracaju (SE),Natal (RN),First Class,204.14,2h 45m,2,031 km
-Recife (PE),Sao Paulo (SP),First Class,383.12,3h 30m,2,216 km
-Sao Paulo (SP),Recife (PE),Economy,383.12,3h 30m,2,216 km
-Rio de Janeiro (RJ),Natal (RN),First Class,344.76,2h 30m,1,779 km
-Natal (RN),Rio de Janeiro (RJ),Economy,344.76,2h 30m,1,779 km
-Sao Paulo (SP),Aracaju (SE),Economy,247.48,2h 15m,1,461 km
-Aracaju (SE),Sao Paulo (SP),First Class,247.48,2h 15m,1,461 km
-Campo Grande (MS),Brasilia (DF),Economy,392.46,2h 30m,1,587 km
-Brasilia (DF),Campo Grande (MS),First Class,392.46,2h 30m,1,587 km
-Recife (PE),Rio de Janeiro (RJ),Economy,375.78,2h 15m,1,612 km
-Rio de Janeiro (RJ),Recife (PE),First Class,375.78,2h 15m,1,612 km
-Natal (RN),Campo Grande (MS),First Class,258.44,2h 30m,2,122 km
-Campo Grande (MS),Natal (RN),Economy,258.44,2h 30m,2,122 km
-Sao Paulo (SP),Brasilia (DF),First Class,377.09,2h 45m,1,189 km
-Brasilia (DF),Sao Paulo (SP),Economy,377.09,2h 45m,1,189 km
-Sao Paulo (SP),Florianopolis (SC),Economy,273.21,2h 15m,1,425 km
-Florianopolis (SC),Sao Paulo (SP),First Class,273.21,2h 15m,1,425 km
-Aracaju (SE),Brasilia (DF),Economy,238.23,2h 45m,1,189 km
-Brasilia (DF),Aracaju (SE),First Class,238.23,2h 45m,1,189 km
-Aracaju (SE),Campo Grande (MS),Economy,364.94,3h 15m,2,126 km
-Campo Grande (MS),Aracaju (SE),First Class,364.94,3h 15m,2,126 km
-Sao Paulo (SP),Aracaju (SE),First Class,399.28,2h 45m,1,461 km
-Aracaju (SE),Sao Paulo (SP),Economy,399.28,2h 45m,1,461 km
-Florianopolis (SC),Rio de Janeiro (RJ),First Class,280.48,2h 15m,1,611 km
-Rio de Janeiro (RJ),Florianopolis (SC),Economy,280.48,2h 15m,1,611 km
+Campo Grande (MS),Salvador (BH),Economy,305.85,2h 45m,2024 km
+Salvador (BH),Campo Grande (MS),First Class,316.22,2h 45m,2024 km
+Florianopolis (SC),Recife (PE),Economy,67.93,3h 30m,2594 km
+Recife (PE),Florianopolis (SC),First Class,67.93,3h 30m,2594 km
+Rio de Janeiro (RJ),Salvador (BH),Economy,55.47,2h 45m,1612 km
+Salvador (BH),Rio de Janeiro (RJ),First Class,316.22,2h 45m,1612 km
+Natal (RN),Brasilia (DF),Economy,204.14,2h 30m,1779 km
+Brasilia (DF),Natal (RN),First Class,204.14,2h 30m,1779 km
+Recife (PE),Brasilia (DF),First Class,67.93,2h 45m,2050 km
+Brasilia (DF),Recife (PE),Economy,67.93,2h 45m,2050 km
+Rio de Janeiro (RJ),Florianopolis (SC),First Class,247.23,2h 15m,1425 km
+Florianopolis (SC),Rio de Janeiro (RJ),Economy,247.23,2h 15m,1425 km
+Campo Grande (MS),Florianopolis (SC),First Class,67.93,2h 45m,1954 km
+Florianopolis (SC),Campo Grande (MS),Economy,67.93,2h 45m,1954 km
+Salvador (BH),Sao Paulo (SP),Economy,127.22,2h 15m,1597 km
+Sao Paulo (SP),Salvador (BH),First Class,127.22,2h 15m,1597 km
+Rio de Janeiro (RJ),Aracaju (SE),First Class,85.29,2h 45m,1693 km
+Aracaju (SE),Rio de Janeiro (RJ),Economy,85.29,2h 45m,1693 km
+Recife (PE),Sao Paulo (SP),Economy,339.07,3h,2216 km
+Sao Paulo (SP),Recife (PE),First Class,339.07,3h,2216 km
+Natal (RN),Florianopolis (SC),Economy,220.84,3h 15m,2390 km
+Florianopolis (SC),Natal (RN),First Class,220.84,3h 15m,2390 km
+Rio de Janeiro (RJ),Salvador (BH),Economy,362.19,2h 45m,1612 km
+Salvador (BH),Rio de Janeiro (RJ),First Class,362.19,2h 45m,1612 km
+Recife (PE),Aracaju (SE),First Class,145.45,3h,2085 km
+Aracaju (SE),Recife (PE),Economy,145.45,3h,2085 km
+Campo Grande (MS),Sao Paulo (SP),Economy,386.7,2h 30m,1352 km
+Sao Paulo (SP),Campo Grande (MS),First Class,386.7,2h 30m,1352 km
+Recife (PE),Campo Grande (MS),First Class,305.85,3h,2507 km
+Campo Grande (MS),Recife (PE),Economy,305.85,3h,2507 km
+Salvador (BH),Florianopolis (SC),Economy,271.54,3h 30m,2538 km
+Florianopolis (SC),Salvador (BH),First Class,271.54,3h 30m,2538 km
+Rio de Janeiro (RJ),Brasilia (DF),First Class,361,2h 45m,1183 km
+Brasilia (DF),Rio de Janeiro (RJ),Economy,361,2h 45m,1183 km
+Natal (RN),Aracaju (SE),Economy,204.14,2h 45m,2031 km
+Aracaju (SE),Natal (RN),First Class,204.14,2h 45m,2031 km
+Recife (PE),Sao Paulo (SP),First Class,383.12,3h 30m,2216 km
+Sao Paulo (SP),Recife (PE),Economy,383.12,3h 30m,2216 km
+Rio de Janeiro (RJ),Natal (RN),First Class,344.76,2h 30m,1779 km
+Natal (RN),Rio de Janeiro (RJ),Economy,344.76,2h 30m,1779 km
+Sao Paulo (SP),Aracaju (SE),Economy,247.48,2h 15m,1461 km
+Aracaju (SE),Sao Paulo (SP),First Class,247.48,2h 15m,1461 km
+Campo Grande (MS),Brasilia (DF),Economy,392.46,2h 30m,1587 km
+Brasilia (DF),Campo Grande (MS),First Class,392.46,2h 30m,1587 km
+Recife (PE),Rio de Janeiro (RJ),Economy,375.78,2h 15m,1612 km
+Rio de Janeiro (RJ),Recife (PE),First Class,375.78,2h 15m,1612 km
+Natal (RN),Campo Grande (MS),First Class,258.44,2h 30m,2122 km
+Campo Grande (MS),Natal (RN),Economy,258.44,2h 30m,2122 km
+Sao Paulo (SP),Brasilia (DF),First Class,377.09,2h 45m,1189 km
+Brasilia (DF),Sao Paulo (SP),Economy,377.09,2h 45m,1189 km
+Sao Paulo (SP),Florianopolis (SC),Economy,273.21,2h 15m,1425 km
+Florianopolis (SC),Sao Paulo (SP),First Class,273.21,2h 15m,1425 km
+Aracaju (SE),Brasilia (DF),Economy,238.23,2h 45m,1189 km
+Brasilia (DF),Aracaju (SE),First Class,238.23,2h 45m,1189 km
+Aracaju (SE),Campo Grande (MS),Economy,364.94,3h 15m,2126 km
+Campo Grande (MS),Aracaju (SE),First Class,364.94,3h 15m,2126 km
+Sao Paulo (SP),Aracaju (SE),First Class,399.28,2h 45m,1461 km
+Aracaju (SE),Sao Paulo (SP),Economy,399.28,2h 45m,1461 km
+Florianopolis (SC),Rio de Janeiro (RJ),First Class,280.48,2h 15m,1611 km
+Rio de Janeiro (RJ),Florianopolis (SC),Economy,280.48,2h 15m,1611 km
 Aracaju (SE),Salvador (BH),Economy,144.18,2h 45m,1,195 km
 Salvador (BH),Aracaju (SE),First Class,144.18,2h 45m,1,195 km
 Salvador (BH),Brasilia (DF),Economy,99.14,2h 45m,1,195 km
