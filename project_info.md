@@ -35,3 +35,26 @@
 - [ ] Sort flight data according to user's preference and return
 - [ ]  Sort hotel data according to user's preference and return
 - [ ]   print an itinerary based on all the data collected
+
+## steps for finding shortest duration / cost for flights
+
+- read data from csv file [flights.csv](./flights.csv)
+- store that data into an array (?) of structures
+  - structure format:
+    - source 
+    - destination
+    - price
+    - duration
+- graph structure:
+  lets say that we want to go from A [source] to Z [destination].
+  - from the array of structures, find all records that have source A.
+  - lets say that there are 3 such records
+    - A to B
+    - A to C
+    - A to D
+  - next for each of B, C and D, do the same thing. Taking B, C, D as the sources, find the destinations for each.
+  - do this for all the records in the array.
+  - with this information, we will be able to construct a graph. (im still researching on how to do that)
+  - after forming the graph, we can traverse the graph (there is an algorithm to do that) and we can find all the possible routes from A to Z.
+  - store all possible routes.
+  - sort the routes to find shortest duration / least price (based on user input).
