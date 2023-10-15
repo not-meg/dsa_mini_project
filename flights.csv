@@ -1,0 +1,93 @@
+from,to,flightType,price,time,distance
+Natal (RN),Recife (PE),Direct,248.71,2h,263 km
+Recife (PE),Natal (RN),Direct,274.17,2h,263 km
+Natal (RN),Salvador (BH),Direct,90.41,2h 15m,1,319 km
+Salvador (BH),Natal (RN),Direct,191.87,2h 15m,1,319 km
+Rio de Janeiro (RJ),Campo Grande (MS),Direct,55.47,2h 30m,1,405 km
+Campo Grande (MS),Rio de Janeiro (RJ),Direct,305.85,2h 30m,1,405 km
+Recife (PE),Salvador (BH),Direct,274.17,2h 45m,1,612 km
+Salvador (BH),Recife (PE),Direct,316.22,2h 45m,1,612 km
+Natal (RN),Sao Paulo (SP),Direct,191.87,1h 30m,366 km
+Sao Paulo (SP),Natal (RN),Direct,191.87,1h 30m,366 km
+Rio de Janeiro (RJ),Sao Paulo (SP),Direct,193.55,1h 20m,362 km
+Sao Paulo (SP),Rio de Janeiro (RJ),Direct,193.55,1h 20m,362 km
+Campo Grande (MS),Salvador (BH),Direct,305.85,2h 45m,2,024 km
+Salvador (BH),Campo Grande (MS),Direct,316.22,2h 45m,2,024 km
+Florianopolis (SC),Recife (PE),Direct,67.93,3h 30m,2,594 km
+Recife (PE),Florianopolis (SC),Direct,67.93,3h 30m,2,594 km
+Rio de Janeiro (RJ),Salvador (BH),Direct,55.47,2h 45m,1,612 km
+Salvador (BH),Rio de Janeiro (RJ),Direct,316.22,2h 45m,1,612 km
+Natal (RN),Brasilia (DF),Direct,204.14,2h 30m,1,779 km
+Brasilia (DF),Natal (RN),Direct,204.14,2h 30m,1,779 km
+Recife (PE),Brasilia (DF),Direct,67.93,2h 45m,2,050 km
+Brasilia (DF),Recife (PE),Direct,67.93,2h 45m,2,050 km
+Rio de Janeiro (RJ),Florianopolis (SC),Direct,247.23,2h 15m,1,425 km
+Florianopolis (SC),Rio de Janeiro (RJ),Direct,247.23,2h 15m,1,425 km
+Campo Grande (MS),Florianopolis (SC),Direct,67.93,2h 45m,1,954 km
+Florianopolis (SC),Campo Grande (MS),Direct,67.93,2h 45m,1,954 km
+Salvador (BH),Sao Paulo (SP),Direct,127.22,2h 15m,1,597 km
+Sao Paulo (SP),Salvador (BH),Direct,127.22,2h 15m,1,597 km
+Rio de Janeiro (RJ),Aracaju (SE),Direct,85.29,2h 45m,1,693 km
+Aracaju (SE),Rio de Janeiro (RJ),Direct,85.29,2h 45m,1,693 km
+Recife (PE),Sao Paulo (SP),Direct,339.07,3h,2,216 km
+Sao Paulo (SP),Recife (PE),Direct,339.07,3h,2,216 km
+Natal (RN),Florianopolis (SC),Direct,220.84,3h 15m,2,390 km
+Florianopolis (SC),Natal (RN),Direct,220.84,3h 15m,2,390 km
+Rio de Janeiro (RJ),Salvador (BH),Direct,362.19,2h 45m,1,612 km
+Salvador (BH),Rio de Janeiro (RJ),Direct,362.19,2h 45m,1,612 km
+Recife (PE),Aracaju (SE),Direct,145.45,3h,2,085 km
+Aracaju (SE),Recife (PE),Direct,145.45,3h,2,085 km
+Campo Grande (MS),Sao Paulo (SP),Direct,386.7,2h 30m,1,352 km
+Sao Paulo (SP),Campo Grande (MS),Direct,386.7,2h 30m,1,352 km
+Recife (PE),Campo Grande (MS),Direct,305.85,3h,2,507 km
+Campo Grande (MS),Recife (PE),Direct,305.85,3h,2,507 km
+Salvador (BH),Florianopolis (SC),Direct,271.54,3h 30m,2,538 km
+Florianopolis (SC),Salvador (BH),Direct,271.54,3h 30m,2,538 km
+Rio de Janeiro (RJ),Brasilia (DF),Direct,361,2h 45m,1,183 km
+Brasilia (DF),Rio de Janeiro (RJ),Direct,361,2h 45m,1,183 km
+Natal (RN),Aracaju (SE),Direct,204.14,2h 45m,2,031 km
+Aracaju (SE),Natal (RN),Direct,204.14,2h 45m,2,031 km
+Recife (PE),Sao Paulo (SP),Direct,383.12,3h 30m,2,216 km
+Sao Paulo (SP),Recife (PE),Direct,383.12,3h 30m,2,216 km
+Rio de Janeiro (RJ),Natal (RN),Direct,344.76,2h 30m,1,779 km
+Natal (RN),Rio de Janeiro (RJ),Direct,344.76,2h 30m,1,779 km
+Recife (PE),Brasilia (DF),Direct,67.93,2h 45m,2,050 km
+Brasilia (DF),Recife (PE),Direct,67.93,2h 45m,2,050 km
+Salvador (BH),Sao Paulo (SP),Direct,127.22,2h 15m,1,597 km
+Sao Paulo (SP),Salvador (BH),Direct,127.22,2h 15m,1,597 km
+Rio de Janeiro (RJ),Aracaju (SE),Direct,202.33,2h 45m,1,693 km
+Aracaju (SE),Rio de Janeiro (RJ),Direct,202.33,2h 45m,1,693 km
+Recife (PE),Aracaju (SE),Direct,109.32,3h 30m,2,085 km
+Aracaju (SE),Recife (PE),Direct,109.32,3h 30m,2,085 km
+Sao Paulo (SP),Salvador (BH),Direct,202.2,2h 15m,1,597 km
+Salvador (BH),Sao Paulo (SP),Direct,202.2,2h 15m,1,597 km
+Florianopolis (SC),Brasilia (DF),Direct,69.04,3h 30m,2,191 km
+Brasilia (DF),Florianopolis (SC),Direct,69.04,3h 30m,2,191 km
+Florianopolis (SC),Aracaju (SE),Direct,120.89,3h 30m,1,953 km
+Aracaju (SE),Florianopolis (SC),Direct,120.89,3h 30m,1,953 km
+Aracaju (SE),Salvador (BH),Direct,144.18,2h 45m,1,195 km
+Salvador (BH),Aracaju (SE),Direct,144.18,2h 45m,1,195 km
+Recife (PE),Sao Paulo (SP),Direct,124.7,3h,2,216 km
+Sao Paulo (SP),Recife (PE),Direct,124.7,3h,2,216 km
+Recife (PE),Sao Paulo (SP),Direct,244.05,3h 30m,2,216 km
+Sao Paulo (SP),Recife (PE),Direct,244.05,3h 30m,2,216 km
+Recife (PE),Florianopolis (SC),Direct,204.14,3h 30m,2,594 km
+Florianopolis (SC),Recife (PE),Direct,204.14,3h 30m,2,594 km
+Campo Grande (MS),Florianopolis (SC),Direct,69.04,3h 30m,1,954 km
+Florianopolis (SC),Campo Grande (MS),Direct,69.04,3h 30m,1,954 km
+Salvador (BH),Brasilia (DF),Direct,372.53,2h 45m,1,195 km
+Brasilia (DF),Salvador (BH),Direct,372.53,2h 45m,1,195 km
+Recife (PE),Natal (RN),Direct,125.09,2h,263 km
+Natal (RN),Recife (PE),Direct,125.09,2h,263 km
+Sao Paulo (SP),Florianopolis (SC),Direct,247.48,2h 15m,1,425 km
+Florianopolis (SC),Sao Paulo (SP),Direct,247.48,2h 15m,1,425 km
+Florianopolis (SC),Aracaju (SE),Direct,116.07,2h 45m,1,953 km
+Aracaju (SE),Florianopolis (SC),Direct,116.07,2h 45m,1,953 km
+Rio de Janeiro (RJ),Natal (RN),Direct,86.64,2h 30m,1,779 km
+Natal (RN),Rio de Janeiro (RJ),Direct,86.64,2h 30m,1,779 km
+Rio de Janeiro (RJ),Recife (PE),Direct,50.45,2h 15m,1,612 km
+Recife (PE),Rio de Janeiro (RJ),Direct,50.45,2h 15m,1,612 km
+Salvador (BH),Sao Paulo (SP),Direct,322.53,2h 45m,1,597 km
+Sao Paulo (SP),Salvador (BH),Direct,322.53,2h 45m,1,597 km
+Brasilia (DF),Aracaju (SE),Direct,238.23,2h 45m,1,189 km
+Aracaju (SE),Brasilia (DF),Direct,238.23,2h 45m,1,189 km
