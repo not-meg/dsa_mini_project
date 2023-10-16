@@ -15,7 +15,7 @@ struct flight_node
 int main()
 {
 	char source[50], destination[50];
-	int no_of_stops, sort_by;
+	int no_of_stops, sort_by, i;
 	char places ["Natal (RN)", "Recife (PE)", "Rio de Janeiro (RJ)", "Campo Grande (MS)", "Salvador (BH)", "Aracaju (SE)", "Sao Paulo (SP)", "Brasilia (DF)", "Florianopolis (SC)"];
 
 	printf("Places:\n");
@@ -38,7 +38,7 @@ int main()
 		scanf("%d", no_of_stops);
 		char stops[no_of_stops];
 
-		for(int i=0; i<no_of_stops; i++) {
+		for(i=0; i<no_of_stops; i++) {
 			printf("Enter the stop: ");
 			scanf("%s", &stops[i]);
 		}
