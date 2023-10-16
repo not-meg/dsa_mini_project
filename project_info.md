@@ -58,3 +58,14 @@
   - after forming the graph, we can traverse the graph (there is an algorithm to do that) and we can find all the possible routes from A to Z.
   - store all possible routes.
   - sort the routes to find shortest duration / least price (based on user input).
+
+
+> [!IMPORTANT]
+> function to get data from csv **mishitha**
+- input: ?
+- output: array of structures
+
+> [!IMPORTANT]
+> function to sort all routes from [source] to [destination] **meera**
+- imput: array of structures (?)
+- output: single structure (shortest duration / least cost)
