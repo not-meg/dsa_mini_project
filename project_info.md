@@ -67,5 +67,10 @@
 
 > [!IMPORTANT]
 > function to sort all routes from [source] to [destination] **meera**
-- imput: array of structures (?)
+- input: array of structures (?)
 - output: single structure (shortest duration / least cost)
+
+> [!IMPORTANT]
+> function to create graph **meghana**
+- input: array of structures received from mishitha
+- output: array of structures (?) containing all possible routes
