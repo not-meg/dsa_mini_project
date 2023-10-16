@@ -10,13 +10,19 @@ struct flight_node
 	int distance;
 	int duration;
 	int cost;
-	char places ["Natal (RN)", "Recife (PE)", "Rio de Janeiro (RJ)", "Campo Grande (MS)", "Salvador (BH)", "Aracaju (SE)", "Sao Paulo (SP)", "Brasilia (DF)", "Florianopolis (SC)"]
 };
 
 int main()
 {
 	char source[50], destination[50];
 	int no_of_stops, sort_by;
+	char places ["Natal (RN)", "Recife (PE)", "Rio de Janeiro (RJ)", "Campo Grande (MS)", "Salvador (BH)", "Aracaju (SE)", "Sao Paulo (SP)", "Brasilia (DF)", "Florianopolis (SC)"];
+
+	printf("Places:\n");
+
+	for(i=0; i<9; i++) {
+		printf("places[i]\n");
+	}
 
 	printf("Enter the source location: ");
 	scanf("%s", source);
