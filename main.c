@@ -10,6 +10,7 @@ struct flight_node
 	int distance;
 	int duration;
 	int cost;
+	char places ["Natal (RN)", "Recife (PE)", "Rio de Janeiro (RJ)", "Campo Grande (MS)", "Salvador (BH)", "Aracaju (SE)", "Sao Paulo (SP)", "Brasilia (DF)", "Florianopolis (SC)"]
 };
 
 int main()
