@@ -9,7 +9,7 @@ int main()
     struct FlightInfo data[MAX_ROWS];
     int unique_places_rows = 0;
     char places[MAX_ROWS][MAX_LEN];
-    int adj[MAX_ROWS][MAX_ROWS][2] = {{0}};
+    struct adjacency_matrix_data adj[MAX_ROWS][MAX_ROWS];
     struct allpaths *all_paths_src_dst = NULL;
 
     char start[MAX_LEN], end[MAX_LEN];
@@ -18,6 +18,7 @@ int main()
     printf("came to main.\n");
 
     memset(data, 0, sizeof(data));
+    memset(adj, 0, sizeof(adj));
 
     no_of_input_rows = get_flight_data(data, MAX_ROWS);
 
@@ -43,9 +44,13 @@ int main()
 
     strcpy(end, "Salvador (BH)");
 
+    printf("got start and end.\n");
+
     allpaths_row = find_path(start, end, unique_places_rows, &all_paths_src_dst, adj, places);
     if(allpaths_row == -1) {
         printf("Bad input.\n");
         return -1;
     }
+
+    find_total_cost_duration(all_paths_src_dst, allpaths_row, adj);
 }
