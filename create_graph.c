@@ -47,19 +47,32 @@ void display_places(char places[MAX_ROWS][MAX_LEN], int rows)
         printf("[%d] %s\n", i, places[i]);
     }
 }
-void display_adj(int adj[MAX_ROWS][MAX_ROWS][2], int rows)
+void display_adj(struct adjacency_matrix_data adj[MAX_ROWS][MAX_ROWS], int rows)
 {
     int i, j;
 
     for(i=0; i<rows; i++) {
         for(j=0; j<rows; j++) {
-            printf("%d\t", adj[i][j][0]);
+            printf("[%.2f,%d] ", adj[i][j].price, adj[i][j].duration);
         }
         printf("\n");
     }
 }
 
-void create_adjacency_matrix(struct FlightInfo *data, int adj[MAX_ROWS][MAX_ROWS][2], int no_of_input_rows,
+void display_paths_total_cost_duration(struct allpaths *all_paths_src_dst, int allpaths_rows)
+{
+    int i, j;
+    for(int i=0; i<allpaths_rows; i++) {
+        for(j=0; j<all_paths_src_dst[i].path_len; j++){
+            printf("%d\t", all_paths_src_dst[i].path[j]);
+        }
+        printf("\n");
+        printf("total price = %.2f, total duration = %d\n", all_paths_src_dst[i].cost, all_paths_src_dst[i].duration);
+    }
+    printf("\n");
+}
+
+void create_adjacency_matrix(struct FlightInfo *data, struct adjacency_matrix_data adj[MAX_ROWS][MAX_ROWS], int no_of_input_rows,
                              char places[MAX_ROWS][MAX_LEN], int unique_places_rows)
 {   
     int i, j, pos_src, pos_dst;
@@ -73,12 +86,12 @@ void create_adjacency_matrix(struct FlightInfo *data, int adj[MAX_ROWS][MAX_ROWS
 
         pos_dst = search_place(places, dst, unique_places_rows);
         assert(pos_src != pos_dst);
-        adj[pos_src][pos_dst][0] = data[i].price;
-        adj[pos_src][pos_dst][1] = data[i].duration;
+        adj[pos_src][pos_dst].price = data[i].price;
+        adj[pos_src][pos_dst].duration = data[i].duration;
     }
 }
 
-int  find_all_paths(int adj[MAX_ROWS][MAX_ROWS][2],
+int  find_all_paths(struct adjacency_matrix_data adj[MAX_ROWS][MAX_ROWS],
                     int pos_start,
                     int pos_end,
                     int unique_places_rows,
@@ -94,12 +107,16 @@ int  find_all_paths(int adj[MAX_ROWS][MAX_ROWS][2],
     path[path_index] = pos_start;
 
     if(pos_start == pos_end) {
-        struct allpaths *temp = realloc(*all_paths_src_dst, sizeof(struct allpaths) * ((*allpaths_row)+1));
-        if (temp == NULL) {
-            return -1;
+        if((*allpaths_row) % 100 == 0) {
+            struct allpaths *temp = realloc(*all_paths_src_dst, sizeof(struct allpaths) * ((*allpaths_row)+100));
+            if (temp == NULL) {
+                return -1;
+            }
+            *all_paths_src_dst = temp;
         }
-        *all_paths_src_dst = temp;
+        
         memcpy((*all_paths_src_dst)[*allpaths_row].path, path, (path_index+1)*(sizeof(int)));
+        (*all_paths_src_dst)[*allpaths_row].path_len = path_index+1;
         //printf("pos_start = %d, pos_end = %d path_index = %d allpaths_row = %d\n", pos_start, pos_end, path_index, *allpaths_row);
         /*for(int i=0; i<path_index+1; i++) {
             printf("%d\t", path[i]);
@@ -112,7 +129,7 @@ int  find_all_paths(int adj[MAX_ROWS][MAX_ROWS][2],
     }
 
     for(i=0; i<unique_places_rows; i++) {
-        if(adj[pos_start][i][0] != 0) {
+        if(adj[pos_start][i].price != 0) {
             if (visited[i] != 1) {
                 if (find_all_paths(adj, i, pos_end, unique_places_rows,
                                    path, all_paths_src_dst, path_index+1,
@@ -128,7 +145,7 @@ int  find_all_paths(int adj[MAX_ROWS][MAX_ROWS][2],
 }
 
 int find_path(char start[MAX_LEN], char end[MAX_LEN], int unique_places_rows,
-             struct allpaths **all_paths_src_dst, int adj[MAX_ROWS][MAX_ROWS][2], char places[MAX_ROWS][MAX_LEN])
+             struct allpaths **all_paths_src_dst, struct adjacency_matrix_data adj[MAX_ROWS][MAX_ROWS], char places[MAX_ROWS][MAX_LEN])
 {
     int pos_start, pos_end, path_index = 0, allpaths_row = 0;
     int path[MAX_ROWS];
@@ -151,7 +168,35 @@ int find_path(char start[MAX_LEN], char end[MAX_LEN], int unique_places_rows,
         return -1;
     }
 
-    //printf("end of find_path func.\n");
+    printf("end of find_path func.\n");
 
     return allpaths_row;
+}
+
+void find_total_cost_duration(struct allpaths *all_paths_src_dst, int allpaths_rows, struct adjacency_matrix_data adj[MAX_ROWS][MAX_ROWS])
+{
+    int i, j, index1, index2;
+
+    for(i=0; i<allpaths_rows; i++) {
+        int total_duration=0;
+        float total_price=0;
+
+        //printf("before j loop.\n");
+
+        for(j=0; j<all_paths_src_dst[i].path_len - 1; j++) {
+            index1 = all_paths_src_dst[i].path[j];
+            index2 = all_paths_src_dst[i].path[j+1];
+
+            total_price = total_price + adj[index1][index2].price;
+            total_duration = total_duration + adj[index1][index2].duration;
+            //printf("j = %d\n", j);
+        }
+
+        (all_paths_src_dst)[i].cost = total_price;
+        (all_paths_src_dst)[i].duration = total_duration;
+
+        //printf("(*all_paths_src_dst)[%d]->cost = %f, (*all_paths_src_dst)[%d]->duration = %d\n", i, (all_paths_src_dst)[i].cost, i, (all_paths_src_dst)[i].duration);
+    }
+
+    display_paths_total_cost_duration(all_paths_src_dst, allpaths_rows);
 }
