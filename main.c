@@ -1,53 +1,51 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "project_header.h"
 #include <string.h>
-
-struct flight_node
-{
-    char source[30];
-    char destination[30];
-    int distance;
-    int duration;
-    int cost;
-};
 
 int main()
 {
-    char source[50], destination[50], ans;
-    int no_of_stops, sort_by, i, sort_by;
-    char *places[] = {"Natal (RN)", "Recife (PE)", "Rio de Janeiro (RJ)", "Campo Grande (MS)", "Salvador (BH)", "Aracaju (SE)", "Sao Paulo (SP)", "Brasilia (DF)", "Florianopolis (SC)"};
+    int no_of_input_rows;
+    struct FlightInfo data[MAX_ROWS];
+    int unique_places_rows = 0;
+    char places[MAX_ROWS][MAX_LEN];
+    int adj[MAX_ROWS][MAX_ROWS][2] = {{0}};
+    struct allpaths *all_paths_src_dst = NULL;
 
-    printf("Places:\n");
+    char start[MAX_LEN], end[MAX_LEN];
+    int allpaths_row;
 
-    for(i=0; i<9; i++) {
-        printf("%s\n", places[i]);
+    printf("came to main.\n");
+
+    memset(data, 0, sizeof(data));
+
+    no_of_input_rows = get_flight_data(data, MAX_ROWS);
+
+    if(no_of_input_rows == -1) {
+        return no_of_input_rows;
     }
 
-    printf("Enter the source location: ");
-    scanf("%s", source);
+    unique_places_rows = find_all_unique_places(data, places, no_of_input_rows);
 
-    printf("Enter destination: ");
-    scanf("%s", destination);
+    display_places(places, unique_places_rows);
 
-    while(getchar() != '\n'); // Clear input buffer
+    create_adjacency_matrix(data, adj, no_of_input_rows, places, unique_places_rows);
 
-    printf("Do you want to add any stops? (Y/N) ");
-    scanf("%c", &ans);
+    display_adj(adj, unique_places_rows);
 
-    if(ans == 'Y' || ans == 'y') {
-        printf("Enter the number of stops: ");
-        scanf("%d", &no_of_stops);
-        char stops[no_of_stops][50];
+    printf("Enter the source: ");
+    //gets(start);
 
-        for(i=0; i<no_of_stops; i++) {
-            printf("Enter the stop: ");
-            scanf("%s", stops[i]);
-        }
+    strcpy(start, "Natal (RN)");
+
+    printf("Enter the destination: ");
+    //gets(end);
+
+    strcpy(end, "Salvador (BH)");
+
+    allpaths_row = find_path(start, end, unique_places_rows, &all_paths_src_dst, adj, places);
+    if(allpaths_row == -1) {
+        printf("Bad input.\n");
+        return -1;
     }
-
-	printf("How do you want to find a route?\nBased on:\n1. Shortest Duration\nLowest Price\n");
-	scanf("%d", &sort_by);
-
-	
-    return 0;
 }
