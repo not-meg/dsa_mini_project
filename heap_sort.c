@@ -34,13 +34,13 @@ void heapSortByDuration(struct allpaths arr[], int n,char places[MAX_ROWS][MAX_L
       int duration = arr[0].duration;
 int hours = duration / 60;
 int minutes = duration % 60;
-          printf("First element after sorting:\n");
-    printf("Duration: %d hours %d minutes, Cost: %f, Path Length: %d\n",
+             printf("First element after sorting:\n");
+    printf("Duration: %d hours %d minutes, Cost: %.2f, Path Length: %d\n",
         hours,
         minutes,
         arr[0].cost,
+        arr[0].path_len,
         sizeof(arr[0].path) / sizeof(arr[0].path[0]));
-
 
 int i;
 printf("Path: ");
@@ -83,10 +83,11 @@ void heapSortByCost(struct allpaths arr[], int n,char places[MAX_ROWS][MAX_LEN])
 int hours = duration / 60;
 int minutes = duration % 60;
           printf("First element after sorting:\n");
-    printf("Duration: %d hours %d minutes, Cost: %f, Path Length: %d\n",
+    printf("Duration: %d hours %d minutes, Cost: %.2f, Path Length: %d\n",
         hours,
         minutes,
         arr[0].cost,
+        arr[0].path_len,
         sizeof(arr[0].path) / sizeof(arr[0].path[0]));
 
 int i;
