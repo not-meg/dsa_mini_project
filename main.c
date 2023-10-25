@@ -35,14 +35,14 @@ int main()
     display_adj(adj, unique_places_rows);
 
     printf("Enter the source: ");
-    //gets(start);
+    gets(start);
 
-    strcpy(start, "Natal (RN)");
+    //strcpy(start, "Natal (RN)");
 
     printf("Enter the destination: ");
-    //gets(end);
+    gets(end);
 
-    strcpy(end, "Salvador (BH)");
+    //strcpy(end, "Salvador (BH)");
 
     printf("got start and end.\n");
 
@@ -54,12 +54,35 @@ int main()
 
     find_total_cost_duration(all_paths_src_dst, allpaths_row, adj);
 
-    heapSortByDuration(all_paths_src_dst, allpaths_row);
+    /*heapSortByDuration(all_paths_src_dst, allpaths_row);
 
     printf("\nSorted flights by duration:\n");
     for (int i = 0; i < allpaths_row; i++) {
         printf("Duration: %d\n", all_paths_src_dst[i].duration);
     }
 
-    printf("done with sorting.\n");
+    printf("done with sorting.\n");*/
+    int sort_type;
+  printf("Enter the sort type (1 for duration, 2 for cost): ");
+  scanf("%d", &sort_type);
+
+  switch (sort_type) {
+    case 1:
+      heapSortByDuration(all_paths_src_dst, allpaths_row,places);
+      break;
+    case 2:
+      heapSortByCost(all_paths_src_dst, allpaths_row,places);
+      break;
+    default:
+      printf("Invalid sort type.\n");
+      return -1;
+  }
+ /* if (allpaths_row > 0) {
+    struct allpaths first_element = all_paths_src_dst[0];
+    printf("First element after sorting:\n");
+    // Access properties of first_element like first_element.duration, first_element.cost, etc.
+} else {
+    printf("No paths found.\n");
+}*/
 }
+
