@@ -36,3 +36,4 @@ int find_path(char start[MAX_LEN], char end[MAX_LEN], int unique_places_rows,
               char places[MAX_ROWS][MAX_LEN]);
 void find_total_cost_duration(struct allpaths *all_paths_src_dst, int allpaths_row,
                               struct adjacency_matrix_data adj[MAX_ROWS][MAX_ROWS]);
+void heapSortByDuration(struct allpaths arr[], int allpaths_row);
