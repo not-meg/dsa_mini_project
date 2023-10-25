@@ -1,3 +1,5 @@
+#ifndef PROJECT_HEADER_H_INCLUDED
+#define PROJECT_HEADER_H_INCLUDED
 #define MAX_ROWS 200
 #define MAX_COLS 6
 #define MAX_LEN 30
@@ -5,9 +7,9 @@
 struct FlightInfo {
     char source[50];
     char destination[50];
-    char flightType[20];  
+    char flightType[20];
     float price;
-    int duration;  
+    int duration;
     int distance;
 };
 
@@ -36,4 +38,9 @@ int find_path(char start[MAX_LEN], char end[MAX_LEN], int unique_places_rows,
               char places[MAX_ROWS][MAX_LEN]);
 void find_total_cost_duration(struct allpaths *all_paths_src_dst, int allpaths_row,
                               struct adjacency_matrix_data adj[MAX_ROWS][MAX_ROWS]);
-void heapSortByDuration(struct allpaths arr[], int allpaths_row);
+void heapSortByDuration(struct allpaths arr[], int allpaths_row,char places[MAX_ROWS][MAX_LEN]);
+
+
+
+#endif // PROJECT_HEADER_H_INCLUDED
+
