@@ -53,4 +53,13 @@ int main()
     }
 
     find_total_cost_duration(all_paths_src_dst, allpaths_row, adj);
+
+    heapSortByDuration(all_paths_src_dst, allpaths_row);
+
+    printf("\nSorted flights by duration:\n");
+    for (int i = 0; i < allpaths_row; i++) {
+        printf("Duration: %d\n", all_paths_src_dst[i].duration);
+    }
+
+    printf("done with sorting.\n");
 }
