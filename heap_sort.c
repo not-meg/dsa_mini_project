@@ -21,7 +21,7 @@ void heapifyByDuration(struct allpaths arr[], int n, int i) {
     }
 }
 
-void heapSortByDuration(struct allpaths arr[], int n) {
+void heapSortByDuration(struct allpaths arr[], int n,char places[MAX_ROWS][MAX_LEN]) {
     for (int i = n / 2 - 1; i >= 0; i--)
         heapifyByDuration(arr, n, i);
 
@@ -31,6 +31,23 @@ void heapSortByDuration(struct allpaths arr[], int n) {
         arr[i] = temp;
         heapifyByDuration(arr, i, 0);
     }
+      int duration = arr[0].duration;
+int hours = duration / 60;
+int minutes = duration % 60;
+          printf("First element after sorting:\n");
+    printf("Duration: %d hours %d minutes, Cost: %f, Path Length: %d\n",
+        hours,
+        minutes,
+        arr[0].cost,
+        sizeof(arr[0].path) / sizeof(arr[0].path[0]));
+
+
+int i;
+printf("Path: ");
+for (i = 0; i < arr[0].path_len; i++) {
+    printf("%s\n ", places[arr[0].path[i]]);
+}
+printf("\n");
 }
 
 void heapifyByCost(struct allpaths arr[], int n, int i) {
@@ -52,7 +69,7 @@ void heapifyByCost(struct allpaths arr[], int n, int i) {
     }
 }
 
-void heapSortByCost(struct allpaths arr[], int n) {
+void heapSortByCost(struct allpaths arr[], int n,char places[MAX_ROWS][MAX_LEN]) {
     for (int i = n / 2 - 1; i >= 0; i--)
         heapifyByCost(arr, n, i);
 
@@ -62,4 +79,21 @@ void heapSortByCost(struct allpaths arr[], int n) {
         arr[i] = temp;
         heapifyByCost(arr, i, 0);
     }
+    int duration = arr[0].duration;
+int hours = duration / 60;
+int minutes = duration % 60;
+          printf("First element after sorting:\n");
+    printf("Duration: %d hours %d minutes, Cost: %f, Path Length: %d\n",
+        hours,
+        minutes,
+        arr[0].cost,
+        sizeof(arr[0].path) / sizeof(arr[0].path[0]));
+
+int i;
+printf("Path: ");
+for (i = 0; i < arr[0].path_len; i++) {
+    printf("%s\n ", places[arr[0].path[i]]);
+}
+printf("\n");
+
 }
