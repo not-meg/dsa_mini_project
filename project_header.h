@@ -3,6 +3,8 @@
 #define MAX_ROWS 200
 #define MAX_COLS 6
 #define MAX_LEN 30
+#define MAX_HOTELS 600
+#define DESTINATION_HASH_SIZE 600
 
 struct FlightInfo {
     char source[50];
@@ -11,6 +13,21 @@ struct FlightInfo {
     float price;
     int duration;
     int distance;
+};
+struct HotelInfo {
+    char name[20];
+    char place[20];
+    float price;
+};
+
+
+struct HotelNode {
+    struct HotelInfo hotel;
+    struct HotelNode* next;
+};
+
+struct HotelBucket {
+    struct HotelNode* head;
 };
 
 struct adjacency_matrix_data
@@ -39,8 +56,11 @@ int find_path(char start[MAX_LEN], char end[MAX_LEN], int unique_places_rows,
 void find_total_cost_duration(struct allpaths *all_paths_src_dst, int allpaths_row,
                               struct adjacency_matrix_data adj[MAX_ROWS][MAX_ROWS]);
 void heapSortByDuration(struct allpaths arr[], int allpaths_row,char places[MAX_ROWS][MAX_LEN]);
+int readHotelsData(struct HotelInfo hotels[], const char *filename);
+int hashDestination(const char* destination);
+void insertHotel(const struct HotelInfo* hotel);
+struct HotelInfo* findCheapestHotel(const char* destination);
 
 
 
 #endif // PROJECT_HEADER_H_INCLUDED
-
